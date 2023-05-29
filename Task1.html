@@ -1,0 +1,183 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Landing Page</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body {
+		font-family: Arial;
+	}
+	.navbar {
+		overflow: hidden;
+		background-color: darkblue;
+		dispaly: flex;
+		height: 75px;
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		float: right;
+		padding-top: 0px;
+		padding-right: 5%;
+	}
+	.logo {
+		color: pink;
+		font-size: 30px;
+	}
+	.logo span {
+		color: cyan;
+	}
+     .navbar ul {
+     	list-style: none;
+     	display: flex;
+     	float: right;
+     	padding-bottom: 30px;
+     }
+      .navbar ul li {
+     	padding: 10px 30px;
+     }
+     .navbar ul li a {
+     	color: #ffffff;
+        font-size: 20px;
+        font-weight: normal;
+        text-decoration: none;
+     }
+     .navbar ul li a:hover {
+     	color: darkblue;
+     	background: white;
+        padding: 10px 10px 10px 10px;
+     }
+     .dropdown {
+     	display: none;
+     }
+     .navbar ul li:hover .dropdown {
+     	display: block;
+     	position: absolute;
+     	left: 0;
+     	top: 100%;
+     	background-color: lightgoldenrodyellow;
+     }
+     .navbar ul li:hover .dropdown ul {
+     	display: block;
+     	margin: 10px;
+     }
+     .dropdown ul li {
+     	width: 150px;
+     	padding: 10px;
+     }
+     .fas {
+     	float: right;
+     	margin-left: 10px;
+     	padding-top: 3px;
+     }
+     .background {
+     	height: 700px;
+     	width: 100%;
+     	border-top: 150px;
+     	padding-top: 100px;
+     	background-image: url('hospit.jpg');
+     	background-repeat: no-repeat;
+     	background-position: center;
+     	background-size: cover;
+     	image-resolution: from-image 300dpi;
+     	shape-image-threshold: initial;
+     }
+     .specialities {
+     	font-size: 25px;
+
+     }
+     .image {
+     	display: inline-block;
+     	justify-content: space-between;
+     	margin-right: 60px;
+     	margin-left: 100px;
+     	background: white;
+     	padding-bottom: 90px;
+     	background-position: center;
+
+     } 
+     .scroll {
+     	padding-top: 530px;
+     	color: red;
+     }
+      .email {
+     	float: right;
+     	color: black;
+     </style>
+</head>
+<body>
+	<div class="navbar">
+		<h2 class="logo">Blossom<span>Hospitals</span></h2>
+			<ul>
+			<li><a href="#">Home</a></li>
+	        <li><a href="#">About us</a></li>
+	        <li><a href="#">Our Doctors</a></li>
+            <li>
+	        	<a href="#">Specialities<i class="fas fa-caret-down"></i> </a>
+
+	        	<div class="dropdown">
+	        		<ul>
+	        			<li><a href="#">Anaesthesiology</a></li>
+	        			<li><a href="#">Bone Marrow Transplant</a></li>
+	        			<li><a href="#">Cardiology</a></li>
+	        			<li><a href="#">Dentistry</a></li>
+	        		</ul>
+	        	</div>
+	        </li>
+	        <li><a href="#">Locations</a></li>
+	        <li><a href="#">Contact</a></li>
+	    </ul>
+	    </div>
+	    <div class="background">
+	    	<div class="scroll"><b><marquee direction="right"><p font size="10" color="pink">24/7 Available..contact us: +91-50 6959 7453</p></marquee></b>
+	    		<br>
+	    	<div class="email">
+                 	<b font color="black">Email-Id:</b><p>blossomhospitals@gmail.com</p>
+                 </div>	
+	    		<br>
+	    </div>
+	    </br></br>
+	    <div class="Excellence">
+	    <br><center><b><h1 font size="1800" face="Arial">Center of Excellence</h1></b></center><br><br></div>
+	    <section>
+	    <div class="banner" style="overflow: hidden; display: inline-block;">
+	    		<figure>
+	   <div class="image">
+       <a href="#"><img src="i1.jpg" width="100px" height="100px" alt="cardiac sciences" target="_blank"></a>
+       <figcaption>Cardiac Sciences</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="Nephrology-03.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Nephrology</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="ped.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>  Pediatrics</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="gastro.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Gastro Sciences</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="ortho.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Orthopedic</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="neuro.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Neuro Sciences</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="pul.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Pulmonology</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="transplant.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Transplants</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="oncology.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Oncology</figcaption></div>
+       <div class="image">
+       <a href="#"><img src="wc.jpg" width="100px" height="100px" alt="cardiac sciences"></a>
+       <figcaption>Women & Child Institute</figcaption></div>
+   </figure>
+	    </section>
+</body>
+</html>
